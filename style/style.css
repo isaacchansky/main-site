@@ -234,3 +234,8 @@
 .description-small {
   font-size: 24px;
 }
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
