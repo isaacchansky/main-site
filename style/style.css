@@ -24,28 +24,8 @@
   font-weight: 400;
 }
 
-.image {
-  background-image: url("http://uploads.webflow.com/58914f43182ab5724c9c2c07/5894ef06a5badc292415fb02_Man%20with%20Fan%20at%20Desk.jpg");
-  background-position: 0px 0px;
-  background-size: 1024px;
-}
-
 .title {
   padding-bottom: 49px;
-}
-
-.desk-image {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 109px;
-  margin-bottom: 58px;
-  padding-top: 174px;
-  padding-bottom: 171px;
-  background-image: url("http://uploads.webflow.com/58914f43182ab5724c9c2c07/5894f3edec966d9d69f5f504_Man%20at%20Desk%20with%20Fan.jpg");
-  background-position: 0px 0px;
-  background-size: cover;
 }
 
 .paragraph {
