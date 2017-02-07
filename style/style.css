@@ -211,20 +211,6 @@
   letter-spacing: 1px;
 }
 
-.black {
-  background-color: #fff;
-  color: #fff;
-}
-
-.white {
-  color: #000;
-}
-
-.white-text {
-  background-color: #fff;
-  color: #fff;
-}
-
 .bottom-headings {
   margin-left: 58px;
   font-family: Georgia, Times, 'Times New Roman', serif;
@@ -244,6 +230,7 @@
   font-size: 36px;
   line-height: 60px;
   padding: 10px;
+  text-align: center;
 }
 
 #mc-embedded-subscribe {
