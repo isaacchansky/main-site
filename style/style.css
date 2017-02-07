@@ -207,7 +207,7 @@
 #mce-EMAIL {
   height: 60px;
   width: 700px;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 60px;
   padding: 10px;
   text-align: center;
@@ -224,6 +224,10 @@
   border: 1px solid black;
   border-radius: 12px;
   margin-top: 20px;
+}
+
+#mc-embedded-subscribe:hover {
+  background-color: #f3f3f3;
 }
 
 .bottom-headings-small {
