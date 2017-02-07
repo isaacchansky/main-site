@@ -137,33 +137,33 @@
   width: 300px;
   height: 300px;
   background-color: #0098ff;
-  background-image: url("http://uploads.webflow.com/58914f43182ab5724c9c2c07/5896c0db8fe5ff7f71febcb9_Wall%20Square.jpg");
+  background-image: url("../image/wall.jpg");
   background-position: 0px 0px;
   background-size: cover;
 }
 
 .divmage.mosque {
-  background-image: url("http://uploads.webflow.com/58914f43182ab5724c9c2c07/5896c28a8fe5ff7f71febd4b_Mosque%20Square.jpg");
+  background-image: url("../image/mosque.jpg");
   background-size: cover;
 }
 
 .divmage.vote {
-  background-image: url("http://uploads.webflow.com/58914f43182ab5724c9c2c07/5896c2812a2594502197e01e_Vote%20Square.jpg");
+  background-image: url("../image/vote.jpg");
   background-size: cover;
 }
 
 .divmage.earth {
-  background-image: url("http://uploads.webflow.com/58914f43182ab5724c9c2c07/5896c279bfd5fa6c63bb9ec0_Earth%20Square.jpg");
+  background-image: url("../image/earth.jpg");
   background-size: cover;
 }
 
 .divmage.newspaper {
-  background-image: url("http://uploads.webflow.com/58914f43182ab5724c9c2c07/5896c2dd176071a2715c5437_Newspaper%20Square.jpg");
+  background-image: url("../image/news.jpg");
   background-size: cover;
 }
 
 .divmage.thumb {
-  background-image: url("http://uploads.webflow.com/58914f43182ab5724c9c2c07/5896c3135bfda235219e9037_All%20Icons.jpg");
+  background-image: url("../image/wall.jpg");
   background-size: cover;
 }
 
