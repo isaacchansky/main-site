@@ -232,3 +232,29 @@
   font-size: 32px;
   text-decoration: none;
 }
+
+#mc_embed_signup {
+  color: black !important;
+  text-align: center !important;
+}
+
+#mce-EMAIL {
+  height: 60px;
+  width: 700px;
+  font-size: 36px;
+  line-height: 60px;
+  padding: 10px;
+}
+
+#mc-embedded-subscribe {
+  margin: auto;
+  background-color: white;
+  font-size: 30px;
+  padding: 8px 25px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 12px;
+  margin-top: 20px;
+}
