@@ -238,3 +238,9 @@ input[type="checkbox"] {
 #mc_embed_signup_scroll {
   text-align: center !important;
 }
+
+.checkbox-wrapper {
+  margin: 25px 15px;
+  height: 300px;
+  float: left;
+}
