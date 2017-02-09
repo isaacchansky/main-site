@@ -167,6 +167,16 @@
   background-size: cover;
 }
 
+.divmage.protestors {
+  background-image: url("../image/protestor.jpg");
+  background-size: cover;
+}
+
+.divmage.city {
+  background-image: url("../image/city.jpg");
+  background-size: cover;
+}
+
 .text-div {
   height: 300px;
   /*background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));*/
