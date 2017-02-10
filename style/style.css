@@ -212,7 +212,7 @@
 .icon-text {
   padding: 14px;
   color: black;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 33px;
   letter-spacing: 1px;
   font-weight: bold;
@@ -246,6 +246,11 @@
   border: 1px solid black;
   border-radius: 12px;
   margin-top: 20px;
+  font-family: 'Titillium Web'
+}
+
+#sign-up-here {
+  font-family: 'Titillium Web'
 }
 
 #mc-embedded-subscribe:hover {
