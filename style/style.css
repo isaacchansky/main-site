@@ -256,7 +256,53 @@ input[type="checkbox"] {
 }
 
 .checkbox-wrapper {
-  margin: 25px 15px;
-  height: 300px;
-  float: left;
+    margin: 5px auto 5px;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 4px solid #88c555;
+    margin: 18px 18px 400px 0px;
+    float: left;
+    position: relative;
+}
+
+label.text-div input[type="checkbox"]  {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
+}
+
+label.text-div input[type="checkbox"] + .checkbox-wrapper  span:after,
+label.text-div input[type="checkbox"] + .checkbox-wrapper  span:before {
+    content: '';
+    display: block;
+    position: absolute;
+}
+
+label.text-div input[type="checkbox"]:checked + .checkbox-wrapper {
+    background: #88c555;
+    border-color: #73a747;
+}
+
+label.text-div input[type="checkbox"] + .checkbox-wrapper  span:before {
+    top: 16px;
+    left: 2px;
+    transform: rotate(45deg);
+    background: #fff;
+    height: 5px;
+    width: 13px;
+}
+
+label.text-div input[type="checkbox"] + .checkbox-wrapper span:after {
+    top: 13px;
+    left: 7px;
+    transform: rotate(-45deg);
+    background: #fff;
+    height: 5px;
+    width: 22px;
+}
+
+label.text-div input[type="checkbox"]:focus + .checkbox-wrapper {
+    border-color: #333;
 }
