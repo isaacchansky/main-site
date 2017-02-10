@@ -220,10 +220,10 @@
 
 .bottom-headings {
   margin-left: 58px;
-  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Titillium Web', serif;
   color: #333;
   font-size: 32px;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 #mce-EMAIL {
