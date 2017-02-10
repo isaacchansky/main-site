@@ -22,6 +22,16 @@
   margin-bottom: 0px;
   color: #000;
   font-weight: 400;
+  font-family: 'Titillium Web';
+  font-size: 48px;
+}
+
+.c-peach {
+  color: rgb(252,188,122);
+}
+
+.c-crimson {
+  color: rgb(236,52,47);
 }
 
 .title {
@@ -123,9 +133,13 @@
 }
 
 .subheading {
-  margin-top: 7px;
   color: #333;
   font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  margin-top: 20px;
+  max-width: 520px;
+  font-family: 'Titillium Web';
 }
 
 .row {
