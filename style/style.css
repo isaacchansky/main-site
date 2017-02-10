@@ -237,7 +237,8 @@
 
 #mc-embedded-subscribe {
   margin: auto;
-  background-color: white;
+  color: white;
+  background-color: #fa962f;
   font-size: 30px;
   padding: 8px 25px;
   text-decoration: none;
