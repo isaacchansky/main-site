@@ -62,7 +62,7 @@ html, body {
 }
 
 .description {
-  padding: 26px 60px;
+  padding: 26px 30px;
   border-style: none;
   border-top-width: 0px;
   border-top-color: #000;
@@ -84,7 +84,7 @@ html, body {
 
 .linker {
   color: #000;
-  text-decoration: underline;
+  font-style: italic;
 }
 
 .utility-page-wrap {
@@ -223,11 +223,10 @@ html, body {
 }
 
 .bottom-headings {
-  margin-left: 58px;
+  margin-left: 30px;
   font-family: 'Titillium Web', serif;
   color: #333;
   font-size: 32px;
-  text-decoration: underline;
 }
 
 #mce-EMAIL {
