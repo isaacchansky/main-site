@@ -346,16 +346,23 @@ label.text-div input[type="checkbox"]:focus + .checkbox-wrapper {
 }
 
 #confirmation {
-  height: 300px;
+  height: 320px;
   width: 600px;
   background-color: white;
-  border: 5px solid rgb(252,188,122);
+  border: 6px solid rgb(252,188,122);
   position: fixed;
   bottom: 10px;
   right: 10px;
   display: none;
+  font-family: 'Titillium Web';
+  font-size: 20px;
+  padding: 20px;
 }
 
 #confirmation.show {
   display: inherit;
+}
+
+.confirmation-item {
+  margin-bottom: 10px;
 }
