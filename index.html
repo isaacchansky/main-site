@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <link href="style/style.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
   </head>
   <body>
 
@@ -101,30 +102,33 @@
             </div>
           </div>
         <div>
-        <div class="bottom-container w-container">
-          <h1 class="bottom-headings">How it works:</h1>
-          <p class="description description-small">
-            Every week, you'll get an email summarizing Donald Trump's tweets on the topics you selected.
-            <br><br>
-            Instead of leaving you hopeless and not sure how to take action, these tweets will be paired with links to donate to great non-profits working on the issues he's tweeting about.
-            <br><br>
-            <div id="mc_embed_signup_scroll">
-              <h2 id="sign-up-here">Sign Up Here:</h2>
-              <br/>
-              <div class="mc-field-group">
-                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="your-email@gmail.com">
-              </div>
-              <br/>
-              <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dcdbf4433e19497bd249de6a1_3d673227fb" tabindex="-1" value=""></div>
-              <div class="clear"><input type="submit" value="Confirm Email" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        <div id="mc_embed_signup_scroll">
+          <h2 class="sign-up-here">Where should we send the emails?</h2>
+          <br/>
+          <div class="mc-field-group">
+            <input type="email" value="" name="EMAIL" class="required email mailchimp-input" id="mce-EMAIL" placeholder="your-email@gmail.com">
           </div>
-        </form>
+          <br/>
+          <div class="mc-field-group size1of2">
+            <h2 class="sign-up-here">How much do you pledge to give per tweet?</h2>
+            <span style="font-size: 32px; margin-right: 4px;">$</span><input type="number" name="MMERGE1" class="mailchimp-input" value="1" min="1" id="mce-MMERGE1">
+          </div>
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dcdbf4433e19497bd249de6a1_3d673227fb" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Confirm" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
         </div>
         <!--End mc_embed_signup-->
+      </div>
+    </form>
+    <div class="bottom-container w-container">
+      <h1 class="bottom-headings">How it works:</h1>
+      <p class="description description-small">
+        Every week, you'll get an email summarizing Donald Trump's tweets on the topics you selected.
+        <br><br>
+        Instead of leaving you hopeless and not sure how to take action, these tweets will be paired with links to donate to great non-profits working on the issues he's tweeting about.
       </p>
     </div>
     <div style="font-size: 13px;">
@@ -150,9 +154,34 @@
         <img src="image/logo.jpg" width="30" height="30" style="position: relative; bottom: 8px;">
       </div>
     </div>
+    <div id="confirmation">
+      You've pledged to donate:
+      <br/>
+      $1 when <img src="image/logo.jpg" width="30" height="30" style="position: relative; bottom: 8px;"> tweets about X.
+      <br/>
+      <br/>
+      $1 when <img src="image/logo.jpg" width="30" height="30" style="position: relative; bottom: 8px;"> tweets about X.
+      <br/>
+      <br/>
+      $1 when <img src="image/logo.jpg" width="30" height="30" style="position: relative; bottom: 8px;"> tweets about X.
+
+    </div>
   </body>
 </html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
-
+<script type="text/javascript">
+// $(document).ready(function() {
+  // window.onscroll = function() {
+    // var body = document.querySelector('body');
+    // var scrollTop = body.scrollTop;
+    // var confirmation = $('#confirmation');
+//
+    // if (1400 < scrollTop) {
+      // confirmation.addClass('show');
+    // } else {
+      // confirmation.removeClass('show');
+    // }
+  // };
+// });
+</script>
 <!-- mc_embed_signup form validation -->
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!-- <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script> -->
