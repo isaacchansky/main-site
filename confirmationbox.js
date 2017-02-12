@@ -6,7 +6,7 @@ $(document).ready(function() {
     var scrollTop = body.scrollTop;
     var confirmation = $('#confirmation');
 
-    if (250 < scrollTop && 1000 < window.screen.width) {
+    if (450 < scrollTop) {
       confirmation.addClass('show');
     }
   };
