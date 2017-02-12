@@ -346,7 +346,6 @@ label.text-div input[type="checkbox"]:focus + .checkbox-wrapper {
 }
 
 #confirmation {
-  height: 320px;
   width: 600px;
   background-color: white;
   border: 6px solid rgb(252,188,122);
