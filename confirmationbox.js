@@ -6,7 +6,7 @@ $(document).ready(function() {
     var scrollTop = body.scrollTop;
     var confirmation = $('#confirmation');
 
-    if (1400 < scrollTop && 1000 < window.screen.width && !noCausesSelected()) {
+    if (1400 < scrollTop && 1000 < window.screen.width) {
       confirmation.addClass('show');
     }
   };
@@ -40,12 +40,17 @@ $(document).ready(function() {
   };
 
   function updateConfirmationBox () {
+    var image = '<img src="image/logo.jpg" width="30" height="30" style="position: relative; bottom: 8px;">';
+
     if (noCausesSelected()) {
-      $('#confirmation').removeClass('show');
+      $('#confirmation').html(
+        'You haven\'t selected any causes yet. <br/><br/><br/>' +
+        image + image + image
+      );
+
       return;
     }
 
-    var image = '<img src="image/logo.jpg" width="30" height="30" style="position: relative; bottom: 8px;">';
     $('#confirmation').html('You\'ve pledged to donate:<br/><br/>');
     Object.keys(window.confirmation).map(function (key) {
       if (window.confirmation[key] === true) {
