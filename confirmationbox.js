@@ -44,7 +44,7 @@ $(document).ready(function() {
 
     if (noCausesSelected()) {
       $('#confirmation').html(
-        'You haven\'t selected any causes yet. <br/><br/><br/>' +
+        'You haven\'t selected any causes yet! <br/><br/><br/>' +
         image + image + image
       );
 
