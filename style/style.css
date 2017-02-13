@@ -358,6 +358,7 @@ label.text-div input[type="checkbox"]:focus + .checkbox-wrapper {
     font-family: 'Titillium Web';
     font-size: 20px;
     padding: 20px;
+    z-index: 10;
   }
 
   #confirmation.show {
