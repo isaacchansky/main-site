@@ -16,6 +16,19 @@ html, body {
   overflow-x: hidden;
 }
 
+a {
+    color: #333;
+    border-bottom: 4px solid #fa962f;
+    text-decoration: none;
+    transition: all 250ms ease;
+}
+
+a:hover,
+a:focus {
+    color: #d07c26;
+    border-color: #d07c26;
+}
+
 .images {
   border: 10px solid #000;
 }
@@ -234,6 +247,9 @@ html, body {
   font-size: 30px;
   line-height: 60px;
   text-align: center;
+  background: #eeeeee;
+  border: none;
+  border-bottom: 4px solid #333;
 }
 
 .mailchimp-input-group {
@@ -250,7 +266,9 @@ html, body {
 }
 
 #mce-MMERGE1 {
-  width: 70px;
+  width: 100px;
+  text-align: left;
+  padding: 0 10px;
 }
 
 #mc-embedded-subscribe {
@@ -262,17 +280,18 @@ html, body {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  border: 1px solid black;
-  border-radius: 12px;
-  font-family: 'Titillium Web'
+  border: 4px solid #d07c26;
+  font-family: 'Titillium Web';
+  transition: all 250ms ease;
 }
 
 .sign-up-here {
   font-family: 'Titillium Web'
 }
 
-#mc-embedded-subscribe:hover {
-  background-color: #f3f3f3;
+#mc-embedded-subscribe:hover,
+#mc-embedded-subscribe:focus {
+  background-color: #d07c26;
 }
 
 .bottom-headings-small {
@@ -358,6 +377,7 @@ label.text-div input[type="checkbox"]:focus + .checkbox-wrapper {
     font-family: 'Titillium Web';
     font-size: 20px;
     padding: 20px;
+    box-shadow: -1px -1px 4px 1px rgba(0,0,0,0.1);
   }
 
   #confirmation.show {
