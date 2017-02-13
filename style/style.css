@@ -158,7 +158,7 @@ html, body {
   background-size: cover;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
     .divmage {
         padding-top: 0;
         height: 250px;
@@ -217,9 +217,15 @@ html, body {
   padding: 14px;
   color: black;
   font-size: 20px;
-  line-height: 33px;
+  line-height: 1.3;
   letter-spacing: 1px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 479px) {
+    .text-div {
+        height: auto;
+    }
 }
 
 .bottom-headings {
@@ -302,6 +308,12 @@ input[type="checkbox"] {
     margin: 18px 18px 200px 0px;
     float: left;
     position: relative;
+}
+
+@media screen and (max-width: 479px) {
+    .checkbox-wrapper {
+        margin-bottom: 0;
+    }
 }
 
 label.text-div input[type="checkbox"]  {
