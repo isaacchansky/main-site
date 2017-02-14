@@ -42,6 +42,10 @@ html, body {
   color: rgb(109, 170, 210) !important;
 }
 
+.c-darkgray {
+  color: rgb(134, 134, 134);
+}
+
 .title {
   padding-bottom: 49px;
 }
@@ -420,4 +424,11 @@ section#headline-section {
 
 #form-wrapper {
   margin: 0 40px;
+}
+
+#short-explanation {
+  text-align: center;
+  padding-top: 60px;
+  font-family: 'Titillium Web';
+  font-size: 1.5em;
 }
