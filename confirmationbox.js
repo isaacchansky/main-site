@@ -6,7 +6,7 @@ $(document).ready(function() {
     var scrollTop = body.scrollTop;
     var confirmation = $('#confirmation');
 
-    if (450 < scrollTop) {
+    if (450 < scrollTop && !window.confirmationDismissed) {
       confirmation.addClass('show');
     }
   };
@@ -39,19 +39,28 @@ $(document).ready(function() {
            window.confirmation['protest'] === false;
   };
 
+  $(document).on('click','#dismiss',function(e){
+    $('#confirmation').remove();
+    window.confirmationDismissed = true;
+  });
+
   function updateConfirmationBox () {
     var image = '<img src="image/logo.jpg" width="30" height="30" style="position: relative; bottom: 8px;">';
 
     if (noCausesSelected()) {
       $('#confirmation').html(
         'You haven\'t selected any causes yet! <br/><br/><br/>' +
+        '<div style="position: absolute; top: 20px; right: 30px; cursor: pointer;" id="dismiss">x</div>' +
         image + image + image
       );
 
       return;
     }
 
-    $('#confirmation').html('You\'ve pledged to donate:<br/><br/>');
+    $('#confirmation').html(
+      'You\'ve pledged to donate:<br/><br/>' +
+      '<div style="position: absolute; top: 20px; right: 30px; cursor: pointer;" id="dismiss">x</div>'
+    );
     Object.keys(window.confirmation).map(function (key) {
       if (window.confirmation[key] === true) {
         var phrase = window.confirmationPhrase[key];

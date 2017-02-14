@@ -365,6 +365,7 @@ label.text-div {
 @media (min-width: 700px) {
   #confirmation {
     width: 600px;
+    position: relative;
     background-color: white;
     border: 6px solid rgb(252,188,122);
     position: fixed;
@@ -385,6 +386,7 @@ label.text-div {
 @media (max-width: 700px) {
   #confirmation {
     background-color: white;
+    position: relative;
     border: 6px solid rgb(252,188,122);
     font-family: 'Titillium Web';
     font-size: 20px;
