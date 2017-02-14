@@ -38,6 +38,10 @@ html, body {
   color: rgb(236,52,47);
 }
 
+.c-deepred {
+  color: rgb(192, 0 42)
+}
+
 .c-chillblue {
   color: rgb(109, 170, 210) !important;
 }
@@ -168,8 +172,8 @@ html, body {
 @media screen and (max-width: 767px) {
     .divmage {
         padding-top: 0;
-        height: 250px;
-        width: 250px;
+        height: 300px;
+        width: 300px;
     }
 }
 
@@ -314,6 +318,26 @@ input[type="checkbox"] {
     position: relative;
 }
 
+.select-box:after {
+  background-color: white;
+  content: 'SELECT';
+  text-align: center;
+  padding: 10px;
+  color: rgb(192, 0, 42);
+  border: 2px solid rgb(192, 0, 42);
+  border-radius: 10px;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  font-size: 18px;
+}
+
+label.text-div input[type="checkbox"]:checked + .select-box:after {
+  content: 'SELECTED';
+  color: white;
+  background-color: rgb(192, 0, 42);
+}
+
 label.text-div input[type="checkbox"]  {
     position: absolute;
     overflow: hidden;
@@ -322,38 +346,12 @@ label.text-div input[type="checkbox"]  {
     margin: -1px; padding: 0; border: 0;
 }
 
-label.text-div input[type="checkbox"] + .checkbox-wrapper  span:after,
-label.text-div input[type="checkbox"] + .checkbox-wrapper  span:before {
-    content: '';
-    display: block;
-    position: absolute;
-}
-
-label.text-div input[type="checkbox"]:checked + .checkbox-wrapper {
-    background: #88c555;
-    border-color: #73a747;
-}
-
-label.text-div input[type="checkbox"] + .checkbox-wrapper  span:before {
-    top: 16px;
-    left: 2px;
-    transform: rotate(45deg);
-    background: #fff;
-    height: 5px;
-    width: 13px;
-}
-
-label.text-div input[type="checkbox"] + .checkbox-wrapper span:after {
-    top: 13px;
-    left: 7px;
-    transform: rotate(-45deg);
-    background: #fff;
-    height: 5px;
-    width: 22px;
-}
-
-label.text-div input[type="checkbox"]:focus + .checkbox-wrapper {
-    border-color: #333;
+label.text-div {
+  height: 265px;
+  position: relative;
+  margin-bottom: 35px;
+  background-color: white;
+  width: 300px;
 }
 
 @media (min-width: 700px) {
@@ -382,8 +380,8 @@ label.text-div input[type="checkbox"]:focus + .checkbox-wrapper {
     border: 6px solid rgb(252,188,122);
     font-family: 'Titillium Web';
     font-size: 20px;
-    padding: 20px;
-    margin: 10px;
+    padding: 40px;
+    margin: 40px;
     z-index: 100;
   }
 
@@ -394,18 +392,6 @@ label.text-div input[type="checkbox"]:focus + .checkbox-wrapper {
 
 .confirmation-item {
   margin-bottom: 10px;
-}
-
-.peach-bar {
-  border: 2px solid rgb(252,188,122);
-  width: 40%;
-  position: relative;
-  top: 8px;
-  float: left;
-}
-
-.peach-bar.right {
-  float: right;
 }
 
 section {
@@ -428,7 +414,7 @@ section#headline-section {
 
 #short-explanation {
   text-align: center;
-  padding-top: 60px;
+  padding: 60px 40px 0 40px;
   font-family: 'Titillium Web';
   font-size: 1.5em;
 }
