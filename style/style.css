@@ -254,12 +254,19 @@ html, body {
 .mailchimp-input-group label {
   font-size: 28px;
   margin: 28px 0;
+  line-height: 32px;
 }
-
 
 #mce-EMAIL {
   width: 80%;
   padding: 10px;
+}
+
+@media (max-width: 700px) {
+  #mce-EMAIL {
+    width: 100%;
+    font-size: 20px;
+  }
 }
 
 #mce-MMERGE1 {
@@ -306,6 +313,7 @@ input[type="checkbox"] {
   margin: auto auto;
   border: 6px solid rgb(252,188,122);
   max-width: 940px;
+  padding: 30px;
 }
 
 .checkbox-wrapper {
@@ -365,7 +373,7 @@ label.text-div {
     display: none;
     font-family: 'Titillium Web';
     font-size: 20px;
-    padding: 20px;
+    padding: 30px;
     z-index: 100;
   }
 
