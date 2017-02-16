@@ -14,6 +14,7 @@
    ========================================================================== */
 html, body {
   overflow-x: hidden;
+  font-family: 'Muli', sans-serif;
 }
 
 .images {
@@ -25,8 +26,7 @@ html, body {
   margin-top: 71px;
   margin-bottom: 0px;
   color: #000;
-  font-weight: 400;
-  font-family: 'Titillium Web';
+  font-weight: 600;
   font-size: 48px;
 }
 
@@ -58,7 +58,6 @@ html, body {
   position: static;
   float: left;
   border: 10px solid #fff;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   color: #000;
   font-size: 20px;
   line-height: 30px;
@@ -78,7 +77,6 @@ html, body {
   border-style: none;
   border-top-width: 0px;
   border-top-color: #000;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   color: #000;
   font-size: 30px;
   line-height: 40px;
@@ -154,7 +152,6 @@ html, body {
   font-size: 32px;
   line-height: 40px;
   margin-top: 20px;
-  font-family: 'Titillium Web';
 }
 
 .row {
@@ -171,9 +168,7 @@ html, body {
 
 @media screen and (max-width: 767px) {
     .divmage {
-        padding-top: 0;
-        height: 300px;
-        width: 300px;
+        padding-top: 100%;
     }
 }
 
@@ -213,10 +208,6 @@ html, body {
 }
 
 .text-div {
-  height: 250px;
-  /*background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));*/
-  /*background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));*/
-  /*opacity: 0;*/
   -webkit-transition: opacity 1000ms ease;
   transition: opacity 1000ms ease;
   color: #000;
@@ -226,16 +217,30 @@ html, body {
 
 .icon-text {
   padding: 14px;
-  color: black;
+  padding-bottom: 90px;
+  color: #333;
   font-size: 20px;
-  line-height: 33px;
+  line-height: 1.6;
   letter-spacing: 1px;
   font-weight: bold;
 }
 
+.icon-text a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 2px solid #333;
+    transition: all 250ms ease-in-out;
+}
+
+.icon-text a:hover,
+.icon-text a:focus {
+    color: #c0002a;
+    text-decoration: none;
+    border-bottom-color: #c0002a;
+}
+
 .bottom-headings {
   margin-left: 30px;
-  font-family: 'Titillium Web', serif;
   color: #333;
   font-size: 32px;
 }
@@ -245,16 +250,41 @@ html, body {
   font-size: 30px;
   line-height: 60px;
   text-align: center;
+  border: 2px solid #999;
 }
 
 .mailchimp-input-group {
-  margin: 60px 0;
+  margin-bottom: 40px;
+}
+
+.mailchimp-input-group .sign-up-here {
+  font-size: 18px;
 }
 
 .mailchimp-input-group label {
-  font-size: 28px;
   margin: 28px 0;
   line-height: 32px;
+}
+
+.pledge-amount {
+    position: relative;
+    max-width: 140px;
+    margin: 0 auto;
+}
+
+.pledge-amount span {
+    position: absolute;
+    left: 12px;
+    margin-right: 0;
+    z-index: 10;
+    top: calc(50% - 0.5em);
+    line-height: 1em;
+}
+
+.pledge-amount input {
+    padding-left: 1.2em;
+    text-align: left;
+    width: 100%;
 }
 
 #mce-EMAIL {
@@ -269,30 +299,27 @@ html, body {
   }
 }
 
-#mce-MMERGE1 {
-  width: 70px;
-}
-
 #mc-embedded-subscribe {
   margin: auto;
   color: white;
-  background-color: #fa962f;
-  font-size: 30px;
-  padding: 8px 25px;
+  background-color: rgb(192, 0, 42);
+  font-size: 18px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
   text-decoration: none;
-  border: none;
   cursor: pointer;
-  border: 1px solid black;
-  border-radius: 12px;
-  font-family: 'Titillium Web'
+  padding: 0.5em 1.2em;
+  font-weight: 700;
+  border: 2px solid rgb(192, 0, 42);
+  border-radius: 10px;
 }
 
 .sign-up-here {
-  font-family: 'Titillium Web'
 }
 
 #mc-embedded-subscribe:hover {
-  background-color: #f3f3f3;
+  background-color: white;
+  color: rgb(192, 0, 42);
 }
 
 .bottom-headings-small {
@@ -313,7 +340,7 @@ input[type="checkbox"] {
   margin: auto auto;
   border: 6px solid rgb(252,188,122);
   max-width: 940px;
-  padding: 30px;
+  padding: 60px 30px;
 }
 
 .checkbox-wrapper {
@@ -330,7 +357,8 @@ input[type="checkbox"] {
   background-color: white;
   content: 'SELECT';
   text-align: center;
-  padding: 10px;
+  padding: 0.5em 1.2em;
+  font-weight: 700;
   color: rgb(192, 0, 42);
   border: 2px solid rgb(192, 0, 42);
   border-radius: 10px;
@@ -346,6 +374,12 @@ label.text-div input[type="checkbox"]:checked + .select-box:after {
   background-color: rgb(192, 0, 42);
 }
 
+label.text-div input[type="checkbox"]:focus + .select-box:after,
+label.text-div:hover input[type="checkbox"] + .select-box:after {
+    background-color: rgb(192, 0, 42);
+    color: white;
+}
+
 label.text-div input[type="checkbox"]  {
     position: absolute;
     overflow: hidden;
@@ -355,11 +389,9 @@ label.text-div input[type="checkbox"]  {
 }
 
 label.text-div {
-  height: 265px;
   position: relative;
   margin-bottom: 35px;
   background-color: white;
-  width: 300px;
 }
 
 @media (min-width: 700px) {
@@ -372,7 +404,6 @@ label.text-div {
     bottom: 10px;
     right: 10px;
     display: none;
-    font-family: 'Titillium Web';
     font-size: 20px;
     padding: 30px;
     z-index: 100;
@@ -388,7 +419,6 @@ label.text-div {
     background-color: white;
     position: relative;
     border: 6px solid rgb(252,188,122);
-    font-family: 'Titillium Web';
     font-size: 20px;
     padding: 30px;
     margin: 30px;
@@ -425,6 +455,6 @@ section#headline-section {
 #short-explanation {
   text-align: center;
   padding: 60px 40px 0 40px;
-  font-family: 'Titillium Web';
   font-size: 1.5em;
+  line-height: 1.2;
 }

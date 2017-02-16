@@ -1,5 +1,41 @@
 $(document).ready(function() {
 
+  function throttle(fn, threshhold, scope) {
+    threshhold || (threshhold = 250);
+    var last,
+        deferTimer;
+    return function () {
+      var context = scope || this;
+
+      var now = +new Date,
+          args = arguments;
+      if (last && now < last + threshhold) {
+        // hold on to it
+        clearTimeout(deferTimer);
+        deferTimer = setTimeout(function () {
+          last = now;
+          fn.apply(context, args);
+        }, threshhold);
+      } else {
+        last = now;
+        fn.apply(context, args);
+      }
+    };
+  }
+
+  // Maintain sizing on icon blocks
+  var $iconBlocks = $('.icon-holder .w-col .text-div');
+
+  function matchHeights(){
+    $iconBlocks.height('auto');
+    var max = Math.max.apply( null, $iconBlocks.map(function(i,e){ return $(e).height()}));
+    $iconBlocks.height(max);
+  }
+  matchHeights();
+  $(window).on('resize', throttle(matchHeights, 250))
+
+
+
   // Show confirmation box at the right scrolling moment
   window.onscroll = function() {
     var body = document.querySelector('body');
